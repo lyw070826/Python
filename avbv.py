@@ -1,3 +1,4 @@
+#版权由编写者所有，如有侵权请联系，将及时删除
 table='fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF'
 tr={}
 for i in range(58):
