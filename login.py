@@ -127,21 +127,6 @@ def like(aid=None,bvid=None): #选择av号或bv号，av则去除开头av二字�
 	respon = requests.post(url,cookies=SESSDATA,headers=headers,data=data)
 	return respon.text
 
-#用法示例
-print(login(username=username,password=password))
-for x in range(1,2)  :
-	t1 = threading.Thread(target=get("缘之空",page=x))
-	t2 = threading.Thread(target=get("穹",page=x))
-	t1.start()
-	t2.start()
-	time.sleep(0.5)
-	print(bvid_list)
-	if msg == 1 :
-		break
-for x in bvid_list:
-	print(comment(message="不好意思，有我的地方就有穹",id=x))
-	print(like(bvid=x))
-	time.sleep(random.randint(3,6))
 
 
 
